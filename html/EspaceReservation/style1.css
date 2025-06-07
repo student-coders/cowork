@@ -1,0 +1,45 @@
+body {
+      background-color:rgb(255, 255, 255);
+}
+
+form {
+    max-width: 30%;
+    margin: 100px auto;
+    background: #ffffff12;
+    border: 1px solid #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    
+}
+form label{
+    margin: 10px 0;
+}
+.form-check-label{
+    margin: 0;
+}
+.btn-primary{
+    margin-left: 40%;
+}
+.login-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+option{
+    width: 120px;
+    color: cadetblue;
+}
+
+
+
+@media (max-width: 575.98px) {
+   form{
+     max-width: 90%;
+     
+    }
+    .btn-primary{
+    margin-left: 40%;
+}
+}
