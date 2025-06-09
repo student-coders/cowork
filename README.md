@@ -96,3 +96,5 @@ git add .
 git commit -m "Ton message de commit"
 git pull origin main --rebase
 git push origin main
+git pull origin main     # Pour récupérer les changements
+git push origin main    
