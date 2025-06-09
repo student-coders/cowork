@@ -9,8 +9,8 @@
 
 ### 1️⃣ Cloner le dépôt  
 ```bash
-git clone https://github.com/student-coders/cowork.git
-cd cowork
+git clone https://github.com/student-coders/cooworking.git
+cd ton_projet
 ````
 
 ### 2️⃣ Copier le fichier `.env.example` en `.env`
