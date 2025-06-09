@@ -9,7 +9,7 @@
 
 ### 1️⃣ Cloner le dépôt  
 ```bash
-git clone https://github.com/student-coders/cooworking.git
+git clone https://github.com/student-coders/cowork.git
 cd ton_projet
 ````
 
