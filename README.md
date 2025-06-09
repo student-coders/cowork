@@ -32,6 +32,8 @@ docker-compose up -d
 ### 5️⃣ Importer la base de données
 
 ```bash
+docker exec -i docker_mysql mysql -u root --password= -e "CREATE DATABASE IF NOT EXISTS coworking_space;"
+
 cat dump.sql | docker exec -i docker_mysql mysql -u root --password= coworking_space
 
 ```
