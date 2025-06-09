@@ -9,8 +9,8 @@
 
 ### 1️⃣ Cloner le dépôt  
 ```bash
-git clone https://github.com/student-coders/cooworking.git
-cd ton_projet
+git clone https://github.com/student-coders/cowork.git
+cd cowork
 ````
 
 ### 2️⃣ Copier le fichier `.env.example` en `.env`
@@ -32,7 +32,8 @@ docker-compose up -d
 ### 5️⃣ Importer la base de données
 
 ```bash
-docker exec -i coworking_mysql mysql -u root -p coworking_space < database.sql
+cat dump.sql | docker exec -i docker_mysql mysql -u root --password= coworking_space
+
 ```
 
 💡 Quand demandé, saisis le mot de passe MySQL configuré dans `.env`.
