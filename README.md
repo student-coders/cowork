@@ -90,4 +90,9 @@ docker-compose down
 
 ---
 
-et merci si vous avez des question 
+comment pusher 
+git status
+git add .
+git commit -m "Ton message de commit"
+git pull origin main --rebase
+git push origin main
