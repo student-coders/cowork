@@ -33,8 +33,10 @@ docker-compose up -d
 
 ```bash
 docker exec -i docker_mysql mysql -u root --password= -e "CREATE DATABASE IF NOT EXISTS coworking_space;"
-
-cat dump.sql | docker exec -i docker_mysql mysql -u root --password= coworking_space
+# Copie le fichier
+docker cp .\dump.sql docker_mysql:/tmp/dump.sql
+# Sans mot de passe
+Get-Content .\dump.sql | docker exec -i docker_mysql mysql -u root coworking_space
 
 ```
 
@@ -97,14 +99,11 @@ docker-compose down
 # Créer un commit avec un message
 💾 git commit -m "Ton message de commit"
 
-# Synchroniser avec le dépôt principal (avec rebase)
-🔄 git pull origin main --rebase
-
 # Envoyer les changements
 🚀 git push origin main
 
 # Récupérer les derniers changements
-📥 git pull origin main
+📥 git pull origin main --rebase
 ```
 
 ## 🗄️  Exporter la Base de Données
