@@ -107,11 +107,11 @@ docker-compose down
 📥 git pull origin main
 ```
 
-## 🗄️ Importer / Exporter la Base de Données
+## 🗄️  Exporter la Base de Données
 
 ```bash
 
-🐳 docker exec -i mysql mysqldump -u root --password= coworking_space > dump.sql
+🐳 docker exec -i docker_mysql mysqldump -u root --password= coworking_space > dump.sql 
 ```
 
 ### 📝 Notes:
