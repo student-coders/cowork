@@ -80,6 +80,49 @@ docker-compose down
 └── README.md              # Ce fichier d'instructions
 ```
 
+
+
+
+# 🚀 Workflow Git & Database
+
+## 🔄 Commandes Git Essentielles
+
+```bash
+# Vérifier l'état des fichiers
+📋 git status
+
+# Ajouter tous les fichiers modifiés
+➕ git add .
+
+# Créer un commit avec un message
+💾 git commit -m "Ton message de commit"
+
+# Synchroniser avec le dépôt principal (avec rebase)
+🔄 git pull origin main --rebase
+
+# Envoyer les changements
+🚀 git push origin main
+
+# Récupérer les derniers changements
+📥 git pull origin main
+```
+
+## 🗄️ Importer / Exporter la Base de Données
+
+```bash
+
+🐳 docker exec -i mysql mysqldump -u root --password= coworking_space > dump.sql
+```
+
+### 📝 Notes:
+- Pour l'import MySQL, remplacer `mysql` par le nom de votre conteneur Docker si différent
+- Le mot de passe doit être spécifié après `--password=` (ex: `--password=monmotdepasse`)
+
+---
+
+✨ **Astuce** : Utilisez `git pull --rebase` pour garder un historique linéaire et propre !
+```
+
 ---
 
 ## ⚠️ Notes importantes
@@ -89,12 +132,3 @@ docker-compose down
 * Assure-toi que Docker est bien installé et lancé sur ta machine.
 
 ---
-
-comment pusher 
-git status
-git add .
-git commit -m "Ton message de commit"
-git pull origin main --rebase
-git push origin main
-git pull origin main     # Pour récupérer les changements
-git push origin main    
